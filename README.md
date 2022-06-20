@@ -1,4 +1,4 @@
-# Custom-EV-IV-Display-Screen (Terry's Edition)Ver. 1.5 2022.
+# Custom-EV-IV-Display-Screen (Terry's Vertion)Ver. 1.5 2022.
  Plantilla personalizable para mostar información de EV, IV y BS de nuestro equipo pokémon en una nueva
  pantalla.
 
