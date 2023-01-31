@@ -62,3 +62,4 @@ Para configuraciones simples aqui esta lo mas fundamental a hacer para compilarl
 - Usar en un script `callasm` seguido por el offset+1 donde insertaron el código.
 
 - Archivos dentro de la carpeta include fueron tomados de pokefirered.
+
