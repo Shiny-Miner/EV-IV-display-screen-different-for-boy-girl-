@@ -1,65 +1,65 @@
 # Custom-EV-IV-Display-Screen (Terry's Vertion)Ver. 1.5 2022.
- Plantilla personalizable para mostar información de EV, IV y BS de nuestro equipo pokémon en una nueva
- pantalla.
+ Customizable template to display information on the EV, IV and BS of our pokemon team in a new
+ screen.
 
- Esta es una Modificación del Custom EV - IV Display Screen de Acimut la cual incluye algunos
- cambios esteticos que la versión original no posee.
+ This is a Modification of the Custom EV - IV Display Screen of Azimut which includes some
+ aesthetic changes that the original version does not have.
  
-(Los archivos dentro de la carpeta src\include\ fueron tomados de pokefirered.)
+(The files inside the src\include\ folder were taken from pokefirered.)
  
-Características (Versión de Acimut):
+Features (Azimuth Version):
 -
-+ Compatible con Pokémon Fire Red, Rojo Fuego y Emerald.
-+ Puedes cambiar el fondo reemplazando el que viene por defecto, la inyección la insertará
-  automáticamente.
-+ Se puede cambiar las coordenadas del sprite del pokémon, así como sus textos.
-+ El color de la estadística de IVs cambia de acuerdo a la naturaleza.
-+ Muestra estadísticas base de acuerdo a la especie.
-+ Censura la estadística de los huevos, en cambio, dice aprox. cúantos pasos te falta para la eclosión.
-+ Bien bomnito y con somniditos xd
-+ Huele a limón.
++ Compatible with Pokémon Fire Red, Fire Red and Emerald.
++ You can change the background by replacing the default one, the injection will insert it
+  automatically.
++ You can change the coordinates of the pokemon sprite, as well as its texts.
++ The color of the IVs stat changes according to nature.
++ Shows base statistics according to the species.
++ Censors the eggs stat, instead it says approx. How many steps do you need to hatch?
++ Very cute and with little sleepies xd
++ Smells like lemon.
 + base: Pokémon Fire Red.
 
 
-Versión de Tio Terry (Mia):
+Uncle Terry's version (Mia):
 -
-+ Continua siendo compatible con Fire Red, Rojo Fuego y Emerald.
-  (De momento).
-+ 2 colores para Chico y Chica.                      
-  (Configurados segun el genero del prota).
-+ Reorganización de textos.
-+ Naturalezas con nombre e indicadores con su respectivo color.
-+ Nivel, Genero y Tipos del Pokémon.
-+ Tipo de Poder Oculto segun la suma de Ivs.
-+ PokéBalls del equipo.
-  (la Pokeball del Pokémon seleccionado se abrira).
-+ El fondo, el Nombre, el Nivel del Pokémon se tornaran amarillos si el Pokémon es Shiny.
-+ Sigue siendo bomnito y con más somniditos xd
-+ Conserva el olor a Limón.
++ Continues to be compatible with Fire Red, Fire Red and Emerald.
+  (For now).
++ 2 colors for Boy and Girl.
+  (Configured according to the gender of the protagonist).
++ Reorganization of texts.
++ Natures with name and indicators with their respective color.
++ Level, Gender and Types of the Pokémon.
++ Type of Hidden Power according to the sum of Ivs.
++ Team PokéBalls.
+  (The Pokeball of the selected Pokémon will open).
++ The background, the Name, the Level of the Pokémon will turn yellow if the Pokémon is Shiny.
++ It continues to be cute and with more sleepiness xd
++ Preserves the smell of Lemon.
 + base: Pokémon Fire Red.
 
-***Notas:***
-Para configuraciones simples aqui esta lo mas fundamental a hacer para compilarlo y usarlo InGame:
+***Notes:***
+For simple setups here is the most fundamental thing to do to compile and use InGame:
 
-- DevkitARM y ARMIPS son necesarios (versiones más recientes).
+- DevkitARM and ARMIPS are required (newer versions).
 
-- Para compilar es necesario tener preproc.exe y gbagfx.exe dentro alguna ruta de la variable PATH
+- To compile it is necessary to have preproc.exe and gbagfx.exe inside some path of the PATH variable
 
-- Abrir el archivo config.mk, buscar y cambiar ff0000 de la siguiente línea por un offset alineado con 
-  suficiente espacio libre (más de 0x2000 bytes):
+- Open the config.mk file, find and change ff0000 in the following line to an offset aligned with
+  enough free space (more than 0x2000 bytes):
         `INSERT_INTO ?= 0x08ff0000`
-- En el archivo config.mk, tambien buscar la siguiente línea
+- In the config.mk file, also look for the following line
         `ROM_CODE ?= BPRE`
-        - dejar BPRE para compilar usando Fire Red
-        - cambiar a BPRS para compilar usando Rojo Fuego 
-        (Si usas Rojo Fuego ve aqui para ver la configuración del archivo main_eviv.c)
-        - cambiar a BPEE para compilar usando Emerald
-        (Si usas Emerald ve aqui para ver la configuración del archivo main_eviv.c)
+        - leave BPRE to compile using Fire Red
+        - switch to BPRS to compile using FireRed
+        (If you use Fire Red go here to see the main_eviv.c file configuration)
+        - switch to BPEE to compile using Emerald
+        (If you use Emerald go here to see the main_eviv.c file configuration)
 
-- Compilan ejecutando make con su terminal, y una rom con la inyección aparecerá en una carpeta llamada
-  build (Tendra el nombre segun la Versión del juego que acabas de colocar en el archivo config.mk).
+- Build by running make with your terminal, and a rom with the injection will appear in a folder called
+  build (It will have the name according to the Version of the game that you just placed in the config.mk file).
 
-- Usar en un script `callasm` seguido por el offset+1 donde insertaron el código.
+- Use in a script `callasm` followed by the offset+1 where they inserted the code.
 
-- Archivos dentro de la carpeta include fueron tomados de pokefirered.
+- Files inside the include folder were taken from pokefirered.
 
